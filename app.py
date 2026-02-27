@@ -10,6 +10,7 @@ from tab_mlr         import tab_mlr
 from tab_diagnostics import tab_diagnostics
 from tab_finance     import tab_finance
 from tab_code        import tab_code
+from tab_qa          import tab_qa
 
 st.set_page_config(
     page_title="Linear Regression in Finance",
@@ -64,6 +65,7 @@ TABS = st.tabs([
     "🔬 Diagnostics",
     "🏦 Finance Cases",
     "🐍 Python Code",
+    "🎓 Q&A / Self-Assessment",
 ])
 
 with TABS[0]: tab_slr()
@@ -71,6 +73,7 @@ with TABS[1]: tab_mlr()
 with TABS[2]: tab_diagnostics()
 with TABS[3]: tab_finance()
 with TABS[4]: tab_code()
+with TABS[5]: tab_qa()
 
 st.html(f"""
 <div style="text-align:center;padding:18px;color:#8892b0;-webkit-text-fill-color:#8892b0;
